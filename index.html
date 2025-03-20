@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ElTetro25</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+</head>
+<body>
+<div class="game-container">
+    <div class="game-area">
+        <canvas id="tetris"></canvas>
+        <canvas id="next-piece"></canvas>
+    </div>
+    <div class="controls-container">
+        <div class="controls">
+            <button id="rotate-button"><i class="fas fa-undo"></i></button>
+            <button id="left-button"><i class="fas fa-arrow-left"></i></button>
+            <button id="right-button"><i class="fas fa-arrow-right"></i></button>
+            <button id="down-button"><i class="fas fa-arrow-down"></i></button>
+        </div>
+        <div class="score">
+            <span id="score">Puntuación: 0</span>
+            <span id="level">Nivel: 1</span>
+            <span id="high-score">Puntuación más alta: 0</span>
+        </div>
+        <div class="game-options">
+            <button id="start-button">Iniciar Juego</button>
+            <button id="restart-button">Reiniciar</button>
+            <label for="dificultad">Dificultad:</label>
+            <select id="dificultad">
+                <option value="fácil">Fácil</option>
+                <option value="medio" selected>Medio</option>
+                <option value="difícil">Difícil</option>
+            </select>
+        </div>
+    </div>
+</div>
+<script src="tetris.js"></script>
+</body>
+</html>
